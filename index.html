@@ -12,19 +12,23 @@
 
     <!-- Navigation -->
     <header>
-        <nav class="navbar">
-            <div class="logo">MyPortfolio</div>
+    <nav class="navbar">
 
-            <button class="menu-toggle" id="menuToggle">☰</button>
+        <h2 class="logo">My Portfolio</h2>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Three-line menu button (mobile only) -->
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <!-- Navigation links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
     </header>
 
     <!-- Home -->
@@ -41,7 +45,6 @@
                 software engineering and learning new technologies.
             </p>
 
-            <a href="#projects" class="btn">View My Projects</a>
         </div>
     </section>
 
@@ -181,39 +184,12 @@
                         to contact me.
                     </p>
 
-                    <p>📧 <strong>Email:</strong> yourmail@example.com</p>
-                    <p>📍 <strong>Location:</strong> India</p>
+                    <a href="mailto:sharonraj355@gmail.com" class="btn">
+                       Contact
+                    </a>
                 </div>
 
-                <form id="contactForm">
-
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                    >
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                    >
-
-                    <textarea
-                        id="message"
-                        rows="6"
-                        placeholder="Your Message"
-                        required
-                    ></textarea>
-
-                    <button type="submit" class="btn">
-                        Send Message
-                    </button>
-
-                </form>
-
+                
             </div>
         </div>
     </section>
@@ -222,10 +198,8 @@
     <footer>
         <p>© 2026 Sharon Raj. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
+    
+            <script src="script.js"></script>
 
 </body>
 </html>
-
-       
