@@ -6,6 +6,9 @@ This project is a **responsive personal portfolio website** created using HTML, 
 
 The website is designed to work properly on **desktop, tablet, and mobile devices**.
 
+## Github Repo Link
+https://github.com/shagasharonraj/portfolio.git
+
 ##  Key Features
 
 * Responsive design for different screen sizes
