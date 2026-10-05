@@ -16,54 +16,87 @@ body {
     background: #ffffff;
 }
 
-/* Navigation */
-header {
+/* Navigation bar */
+.navbar {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #111827;
-}
-
-.navbar {
-    max-width: 1100px;
-    margin: auto;
-    padding: 18px 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
+    color: white;
 }
 
+/* Normal links - desktop */
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 28px;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
+    font-size: 17px;
 }
 
 .nav-links a:hover {
     color: #38bdf8;
 }
 
-.menu-toggle {
+/* Three-line button is hidden on desktop */
+.menu-btn {
     display: none;
     background: none;
     border: none;
     color: white;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
+}
+
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 768px) {
+
+    /* Show three lines */
+    .menu-btn {
+        display: block;
+    }
+
+    /* Hide links initially */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 20px;
+        background-color: #1e293b;
+        width: 180px;
+        padding: 15px;
+        border-radius: 8px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Show links when three lines are clicked */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 12px 0;
+    }
+
+    .nav-links a {
+        display: block;
+    }
 }
 
 /* Hero */
@@ -210,7 +243,7 @@ header {
 /* Skills */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -310,12 +343,6 @@ header {
 .contact-info p {
     margin-bottom: 15px;
     color: #555;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 input,
